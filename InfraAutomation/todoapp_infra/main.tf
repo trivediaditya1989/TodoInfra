@@ -136,3 +136,8 @@ module "vm_username" {
   secret_value        = "devopsadmin"
 }
 
+
+resource "azurerm_resource_group" "rg" {
+  name     = "myResourceGroup"
+  location = "East US"
+}
